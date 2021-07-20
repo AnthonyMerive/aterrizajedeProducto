@@ -83,6 +83,7 @@ nav {
 .principal{
     background-color:rgba(240, 230, 140, 0.418);
     margin-top: 11%;
+    padding-bottom: 5%;
     grid-area: main;
 }
 
@@ -211,4 +212,42 @@ ul li{
     color: white;
     text-align: right;
 }
+
+@media (min-width: 600px){
+
+    .contenedor{
+        display: grid;
+        gap: 15px;
+        grid-template-areas:
+        "header"
+        "main"
+        "footer" ;
+    }
+
+    .principal{
+        margin-top: 5%;
+    }
+
+    .modelos{
+        text-shadow: 2px 4px 8px black;
+        display: grid;
+        grid-auto-rows: 200px;
+        gap:20px;
+        padding:0;
+        grid-template-areas:
+        "gw trek ontrail";
+    }
+
+    .pagos{
+    
+        display: grid;
+        gap:20px;
+        padding:0 100px;
+        grid-template-areas:
+        ".      subtitle     ."
+        "semanal mensual anual";
+    }
+
+}
+
 
