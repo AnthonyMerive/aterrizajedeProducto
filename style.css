@@ -1,0 +1,214 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300&family=Roboto+Mono:wght@100&display=swap');
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html{
+    height: 100%;
+}
+
+body{
+    font-family: 'Roboto Condensed', sans-serif;
+    background-image: url(./images/background.jpg);
+    font-size:1.2rem;
+    min-height: 100%;
+}
+
+h2{
+    font-family: 'Roboto Mono', monospace;
+}
+
+.contenedor > *{
+    box-shadow: -1px 1px 7px 0px black;
+    border-radius: 4px;
+    padding: 10px;
+    text-align: center;
+}
+
+.contenedor{
+    display: grid;
+    gap: 15px;
+    grid-template-areas:
+    "header"
+    "main"
+    "footer" ;
+}
+
+.encabezado{
+    width: 100%;
+    grid-area: header;
+    position: fixed;
+    display: inline-block;
+    background-color: rgba(44, 17, 2, 0.712);
+}
+
+.barraNav{
+    width: 100%;
+    margin: auto;
+    overflow:hidden;
+}
+
+nav {
+    float: left; 
+    padding: auto;
+  }
+  
+  nav ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    overflow: hidden;
+  }
+  
+  nav ul li {
+    display: inline-block;
+    font-size: 16px;
+  }
+  
+  nav ul li a {
+    display: block;
+	padding: 10px;
+    color: #fff;
+    text-decoration: none;
+  }
+  
+  nav ul li:hover {
+    background: #504804a4;
+    border-radius: 10px;
+  }
+
+.principal{
+    background-color:rgba(240, 230, 140, 0.418);
+    margin-top: 11%;
+    grid-area: main;
+}
+
+.subtitle{
+    margin:50px 0;
+}
+
+.sobreNosotros{
+    padding:10px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.modelos{
+    text-shadow: 2px 4px 8px black;
+    display: grid;
+    grid-auto-rows: 200px;
+    gap:20px;
+    padding:0;
+    grid-template-areas:
+    "gw"
+    "trek"
+    "ontrail";
+}
+
+.galeria{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 4px;
+}
+
+.galeria:hover{
+    filter: opacity(0.9);
+    transform: scale(1.04);
+}
+
+.gw{
+    grid-area: gw;
+    background-image: url(./images/gw.jpeg);
+    background-size:contain;
+    background-repeat: no-repeat;
+    background-position:center;
+}
+
+.ontrail{
+    grid-area: ontrail;
+    background-image: url(../images/ontrail.jpg);
+    background-size:contain;
+    background-repeat: no-repeat;
+    background-position:center;
+}
+
+.trek{
+    grid-area: trek;
+    background: url(../images/trek.jpg);
+    background-size:contain;
+    background-repeat: no-repeat;
+    background-position:center;
+}
+
+.pagos{
+    
+    display: grid;
+    gap:20px;
+    padding:0 100px;
+    grid-template-areas:
+    "subtitle"
+    "semanal"
+    "mensual"
+    "anual";
+}
+
+.subtitle{
+    grid-area: subtitle;
+}
+
+.semanal{
+    text-align: center;
+    grid-area: semanal;
+    box-sizing: content-box;
+    background-color: rgba(163, 89, 4, 0.541);
+    box-shadow: 2px 4px 8px black;
+}
+
+ul li{
+    list-style-type: none;
+}
+
+.mensual{
+    text-align: center;
+    grid-area: mensual;
+    background-color: rgba(184, 184, 184, 0.541);
+    box-shadow: 2px 4px 8px black;
+}
+
+ul li{
+    list-style-type: none;
+}
+
+.anual{
+    text-align: center;
+    grid-area: anual;
+    background-color: rgba(252, 235, 0, 0.616);
+    box-shadow: 2px 4px 8px black;
+}
+
+ul li{
+    list-style-type: none;
+}
+
+.btn{
+    padding: 0 20px;
+    border-radius: 10px;
+}
+
+.btn:hover{
+    transform: scale(1.2);
+    background-color: rgb(233, 209, 71);
+}
+
+
+.piePag{
+    grid-area: footer;
+    background-color: rgba(44, 17, 2, 0.712);
+    color: white;
+    text-align: right;
+}
+
