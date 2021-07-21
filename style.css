@@ -131,7 +131,7 @@ nav {
 
 .ontrail{
     grid-area: ontrail;
-    background-image: url(../images/ontrail.jpg);
+    background-image: url(./images/ontrail.jpg);
     background-size:contain;
     background-repeat: no-repeat;
     background-position:center;
@@ -139,7 +139,7 @@ nav {
 
 .trek{
     grid-area: trek;
-    background: url(../images/trek.jpg);
+    background: url(./images/trek.jpg);
     background-size:contain;
     background-repeat: no-repeat;
     background-position:center;
